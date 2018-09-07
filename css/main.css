@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Bitter:700');
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Montserrat, Sans-serif;
+    min-height: 100%;
+    width: 100%;
+}
+
+/* My logo */
+
+.logo {
+    border: 0;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0 1rem 0 0;
+    height: 3.6rem;
+    width: 3.6rem;
+    font-family: Bitter, Serif;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-align: center;
+    color: #fff;
+    background-color: #cc3333;
+    overflow: hidden;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.description {
+    line-height: 100%;
+}
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default in Bootstrap */
+
+/*  Small devices (landscape phones, 576px and up)  */
+@media (min-width: 576px) {
+}
+
+/*  Medium devices (tablets, 768px and up)  */
+@media (min-width: 768px) {
+    body {
+        max-width: 45rem;
+    }
+}
+
+/*  Large devices (desktops, 992px and up)  */
+@media (min-width: 992px) {
+}
+
+/*  Extra large devices (large desktops, 1200px and up)  */
+@media (min-width: 1200px) {
+}

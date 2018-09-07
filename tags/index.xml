@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Zed Lapel Pin</title>
-    <link>http://example.org/tags/</link>
-    <description>Recent content in Tags on Zed Lapel Pin</description>
+    <title>Tags on Scribbliograph</title>
+    <link>https://zmustapha.github.io/tags/</link>
+    <description>Recent content in Tags on Scribbliograph</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://zmustapha.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
