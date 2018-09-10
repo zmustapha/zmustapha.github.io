@@ -1,16 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Bitter:700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700');
 
 html {
     height: 100%;
 }
 
 body {
-    font-family: Montserrat, Sans-serif;
+    font-family: 'Open Sans', Sans-serif;
     min-height: 100%;
     width: 100%;
 }
 
-/* My logo */
+h1, h2, h3, h4 {
+    font-family: Montserrat, Sans-serif;
+}
+
+header {
+    margin-top: 1rem;
+    font-family: Montserrat, Sans-serif;
+}
+
+footer {
+    margin-bottom: 1rem;
+}
 
 .logo {
     border: 0;
@@ -19,9 +30,8 @@ body {
     margin: 0 1rem 0 0;
     height: 3.6rem;
     width: 3.6rem;
-    font-family: Bitter, Serif;
     font-size: 3rem;
-    line-height: 3.5rem;
+    line-height: 3.75rem;
     text-align: center;
     color: #fff;
     background-color: #cc3333;
@@ -35,12 +45,48 @@ body {
 
 .title {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.5rem;
 }
 
+.title a {
+    text-decoration: none;
+    color: #000;
+}
+
 .description {
+    font-size: 1.2rem;
+    color: #666;
     line-height: 100%;
+}
+
+header .nav {
+    margin-left: 3.6rem;
+    font-size: 0.875rem;
+}
+
+h1.homepage {
+    margin-left: 4.5rem;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.nav-homepage .nav-item {
+    padding: 0.5rem 0rem 0rem 2.5rem;
+}
+
+.nav-homepage .date-published {
+    min-width: 6.25rem;
+}
+
+.nav-homepage .nav-link {
+    display: inline-block;
+    padding: 0;
+}
+
+.byline {
+    font-size: 1rem;
+    color: #999;
 }
 
 /* Extra small devices (portrait phones, less than 576px)
