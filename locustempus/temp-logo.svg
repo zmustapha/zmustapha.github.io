@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xl="http://www.w3.org/1999/xlink" version="1.1" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="286 202 367.744 76" width="367.744" height="76">
+  <defs>
+    <font-face font-family="Avenir Next" font-size="48" panose-1="2 11 8 3 2 2 2 2 2 4" units-per-em="1000" underline-position="-75" underline-thickness="50" slope="0" x-height="498" cap-height="708" ascent="1e3" descent="-365.9973" font-weight="700">
+      <font-face-src>
+        <font-face-name name="AvenirNext-Bold"/>
+      </font-face-src>
+    </font-face>
+  </defs>
+  <metadata> Produced by OmniGraffle 7.11.5 
+    <dc:date>2020-05-28 11:30:27 +0000</dc:date>
+  </metadata>
+  <g id="Canvas_2" stroke="none" stroke-opacity="1" fill="none" stroke-dasharray="none" fill-opacity="1">
+    <title>Canvas 2</title>
+    <g id="Canvas_2: Layer 1">
+      <title>Layer 1</title>
+      <g id="Graphic_2">
+        <text transform="translate(291 207)" fill="white">
+          <tspan font-family="Avenir Next" font-size="48" font-weight="700" fill="white" x="0" y="48">Locus    Tempus</tspan>
+        </text>
+      </g>
+      <g id="Group_7">
+        <g id="Graphic_3">
+          <title>Room</title>
+          <path d="M 443 204.33333 C 431.39 204.33333 422 213.72333 422 225.33333 C 422 241.08333 443 264.33333 443 264.33333 C 443 264.33333 464 241.08333 464 225.33333 C 464 213.72333 454.61 204.33333 443 204.33333 Z M 443 232.83333 C 438.86 232.83333 435.5 229.47333 435.5 225.33333 C 435.5 221.19333 438.86 217.83333 443 217.83333 C 447.14 217.83333 450.5 221.19333 450.5 225.33333 C 450.5 229.47333 447.14 232.83333 443 232.83333 Z" fill="#78adff"/>
+        </g>
+        <g id="Group_6">
+          <g id="Graphic_5">
+            <circle cx="443" cy="223.9595" r="14.0187144218955" fill="white"/>
+            <circle cx="443" cy="223.9595" r="14.0187144218955" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width=".25"/>
+          </g>
+          <g id="Graphic_4">
+            <title>Schedule</title>
+            <path d="M 443.0701 209.98507 C 435.24766 209.89745 428.9813 216.17783 428.9813 223.91615 C 428.9813 231.65446 435.24766 237.93484 442.986 237.93484 C 450.7383 237.93484 457.0187 231.65446 457.0187 223.91615 C 457.0187 216.17783 450.7383 209.98507 443.0701 209.98507 Z M 443.0701 235.21872 L 443.0701 235.21872 C 436.80374 235.1311 431.78505 230.1124 431.78505 223.91615 C 431.78505 217.71988 436.80374 212.7012 443 212.7012 C 449.19626 212.7012 454.21495 217.71988 454.21495 223.91615 C 454.21495 230.1124 449.19626 235.21872 443.0701 235.21872 Z M 443.771 216.99442 L 441.6682 216.99442 L 441.6682 225.31802 L 448.95794 229.7339 L 450.00935 228.0096 L 443.771 224.26661 Z" fill="#4353ff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
