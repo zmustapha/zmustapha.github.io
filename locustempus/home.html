@@ -14,12 +14,14 @@
 
 </head>
 <body>
-    <header>
+    <header class="fixed-top landingpage">
         <a class="skippy sr-only sr-only-focusable" href="#content">
         <span class="skippy-text">Skip to main content</span>
         </a>
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand"><img src="temp-logo.png" alt="temp-logo"></a>
+        <div class="header-shadow">
+        </div>
+        <nav class="navbar" id="landingnav">
+            <a href="." class="navbar-brand"><img src="temp-logo.png" alt="temp-logo"></a>
             <form class="form-inline">
                 <button class="btn btn-secondary my-2 my-sm-0" type="submit">Log in</button>
             </form>
@@ -130,5 +132,18 @@
   </div>
     </footer>
 
+<script src="jquery-3.5.1.slim.min.js"></script>
+
+<script>
+	jQuery(document).on("scroll", function(){
+		if
+      (jQuery(document).scrollTop() > 200){
+		  jQuery(".landingpage").addClass("shrink");
+		}
+		else
+		{
+			jQuery(".landingpage").removeClass("shrink");
+		}
+	});</script>
 </body>
 </html>

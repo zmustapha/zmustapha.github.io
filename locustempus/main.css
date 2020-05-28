@@ -34,9 +34,58 @@ body, html  {
   outline: 1px dotted;
 }
 
+header.landingpage {
+    background: transparent;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  height: 6.5rem;
+  z-index: 999;
+    /* background-color: #343a40!important; */
+}
+
+.header-shadow {
+  height: 6.5rem;
+    width: 100%;
+    height: 100%;
+  position: absolute;
+  top: 0;
+  left; 0;
+    background-color: #343a40;
+    opacity: 0.4;
+}
+
 .navbar-brand img {
+    height: 4.75rem;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+
+header.landingpage.shrink {
+    height: 4.125rem;
+    background-color: #343a40;
+}
+
+header.landingpage.shrink .navbar-brand img {
     height: 2.5rem;
 }
+
+
+/* 
+#landingnav {
+    height: 6rem;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  opacity: 0.8;
+}
+
+.shrink#landingnav {
+    height: 4.125rem;
+  opacity: 1;
+}
+ */
 
 section {
     padding: 4rem 0;
@@ -44,14 +93,40 @@ section {
 
 /* --- Section: Hero --- */
 .feature-hero {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("lt-hero.png");
-  height: 35rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("lt-hero.png");
+  height: 42rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   padding: 0;
+  z-index: 990;
 }
+
+.feature-hero-shadow {
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  height: 6.5rem;
+    width: 100%;
+  position: absolute;
+  top: 0;
+  left; 0;
+    background-color: #343a40;
+    opacity: 0.7;
+}
+
+/* 
+.feature-hero-shadow.shrink {
+    height: 4.125rem;
+    width: 100%;
+  position: fixed;
+  top: 0;
+  left; 0;
+    background-color: #343a40;
+    opacity: 1;
+}
+ */
 
 .hero-text {
   text-align: center;
