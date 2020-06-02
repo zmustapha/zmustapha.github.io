@@ -76,7 +76,7 @@ section {
 /* --- Section: Hero --- */
 .feature-hero {
     background-image: linear-gradient(rgba(65, 81, 108, 0.2), rgba(65, 81, 108, 0.2)), url("lt-hero2.png");
-    height: 42rem;
+    height: 25rem;
     padding: 0;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,20 +86,21 @@ section {
 }
 
 .hero-text {
-        top: 55%;
-        left: 40%;
-        transform: translate(-33%, -55%);
+        top: 50%;
+        left: 0%;
+        transform: translate(0%, -40%);
     text-align: center;
     position: absolute;
 }
 
 .hero-text h1 {
     font-weight: 600;
+    font-size: 1.8rem;
 }
 
 .hero-text p {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .image-placeholder {
@@ -133,6 +134,13 @@ No media query for `xs` since this is the default in Bootstrap
         top: 60%;
         left: 50%;
         transform: translate(-50%, -55%);
+    }
+    .hero-text h1 {
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+    .hero-text p {
+        font-size: 1.5rem;
     }
 }
 
