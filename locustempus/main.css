@@ -69,12 +69,12 @@ header.landingpage.shrink .navbar-brand img {
     height: 1.8rem;
 }
 
-section {
-    padding: 4rem 0;
+.feature {
+    padding: 4rem 1rem;
 }
 
 /* --- Section: Hero --- */
-.feature-hero {
+.feature.hero {
     background-image: linear-gradient(rgba(65, 81, 108, 0.2), rgba(65, 81, 108, 0.2)), url("lt-hero2.png");
     height: 25rem;
     padding: 0;
@@ -105,6 +105,7 @@ section {
 
 .image-placeholder {
     height: 20rem;
+    border: 1px solid #ddd;
 }
 
 /* 
@@ -126,7 +127,7 @@ No media query for `xs` since this is the default in Bootstrap
     header.landingpage.shrink .navbar-brand img {
         height: 2.5rem;
     }
-    .feature-hero {
+    .feature.hero {
         height: 35rem;
     }
     .hero-text {
@@ -140,13 +141,20 @@ No media query for `xs` since this is the default in Bootstrap
         font-size: 2.5rem;
     }
     .hero-text p {
-        font-size: 1.5rem;
+        font-size: 1.625rem;
     }
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    .feature-hero {
+    .feature {
+        display: block;
+        padding: 4rem 0;
+    }
+    .feature p {
+        font-size: 1.2rem;
+    }
+    .feature.hero {
         height: 42rem;
     }
     .hero-text {
@@ -160,7 +168,7 @@ No media query for `xs` since this is the default in Bootstrap
     }
     .hero-text p {
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 1.625rem;
     }
 }
 
