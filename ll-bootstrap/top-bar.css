@@ -29,13 +29,23 @@
     font-size: 0.85rem;
     justify-content: center;
 }
-.top-bar__nav .nav-link {
-    color: #fff; /* text-white */
-}
 @media (min-width: 768px) {
     .top-bar__nav {
         margin-top: 0;
         margin-bottom: 0;
+    }
+}
+.top-bar__nav .nav-link {
+    color: #fff; /* text-white */
+}
+.top-bar__nav img {
+    width: 1rem;
+    height: 1rem;
+}
+@media (min-width: 768px) {
+    .top-bar__nav img {
+        width: 1.5rem;
+        height: 1.5rem;
     }
 }
 
