@@ -1,7 +1,23 @@
 .top-bar {
     background-color: #212529; /* $gray-900 */
-    padding: 0.5rem 1rem; /* py-2 px-3 */
+    padding: 0.5rem 0.5rem; /* py-2 px-2 */
     color: #fff; /* text-white */
+}
+@media (min-width: 768px) {
+    .top-bar {
+        padding: 0.5rem 1rem;
+    }
+}
+
+.top-bar__container {
+    padding-right: 0;
+    padding-left: 0;
+}
+@media (min-width: 768px) {
+    .top-bar__container {
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
 }
 
 .top-bar__nav {
@@ -15,10 +31,10 @@
     color: #fff; /* text-white */
 }
 @media (min-width: 768px) {
-.top-bar__nav {
-    margin-top: 0;
-    margin-bottom: 0;
-}
+    .top-bar__nav {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 .navbar-brand {
