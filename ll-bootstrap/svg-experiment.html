@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>Question Dashboard - Logic Learner</title>
+</head>
+<body>
+
+<!-- SVG definitions -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="dragon" viewBox="0 0 640 512">
+    <title>Logic Learner</title>
+    <defs><style>.cls-1{fill:#fff;}</style></defs>
+    <path class="cls-1" d="M18.32,255.78,192,224l-91.28,68.69C90.64,302.73,97.78,320,112,320h222.7A247.35,247.35,0,0,1,320,236.58V194.31l-119.73-87.6a64,64,0,0,0-77.06,4.59L5.81,227.64C-6.57,238,2.36,258.06,18.32,255.78Zm556.87,34.1L474.53,239.57A48,48,0,0,1,448,196.65V160h64l28.09,22.63A32,32,0,0,0,562.72,192h31a32,32,0,0,0,28.62-17.69l14.31-28.62a32,32,0,0,0-3-33.51L559.07,12.76A32,32,0,0,0,533.47,0H296a8,8,0,0,0-5.66,13.61L352,64,292.42,88.8a8,8,0,0,0,0,14.31L352,128V236.58A215.61,215.61,0,0,0,448,416c-195.59,6.81-344.56,41-434.1,60.91A17.78,17.78,0,0,0,17.76,512H516.84c63.29,0,119.61-47.56,123-110.76a116.7,116.7,0,0,0-64.64-111.36Zm-86-223.63,45.65,11.41c-2.75,10.91-12.47,18.89-24.13,18.26-13-.71-25.85-12.53-21.52-29.67Z"></path>
+  </symbol>
+  <symbol id="sonobe" viewBox="0 0 335.81 325.91">
+    <title>Logic Learner</title>
+    <defs><style>.cls-1{fill:#fff;stroke:#212529;stroke-miterlimit:10;stroke-width:14px;}</style></defs>
+    <rect class="cls-1" x="134.32" y="181.82" width="67.18" height="67.18" transform="translate(-103.14 181.82) rotate(-45)"/><polygon class="cls-1" points="215.41 215.41 215.41 120.4 167.91 167.91 215.41 215.41"/><polygon class="cls-1" points="120.4 215.41 18.2 317.61 120.4 310.42 167.91 262.91 120.4 215.41"/><polygon class="cls-1" points="215.41 215.41 167.91 262.91 215.41 310.42 317.61 208.21 215.41 215.41"/><polygon class="cls-1" points="215.41 120.4 113.2 18.2 120.4 120.4 167.91 167.91 215.41 120.4"/><polygon class="cls-1" points="120.4 310.42 215.41 310.42 167.91 262.91 120.4 310.42"/><polygon class="cls-1" points="120.4 120.4 120.4 215.41 167.91 167.91 120.4 120.4"/>
+  </symbol>
+  <symbol id="home" viewBox="0 0 16 16">
+    <title>Home</title>
+    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+  </symbol>
+  <symbol id="grid" viewBox="0 0 16 16">
+    <title>Levels</title>
+    <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+  </symbol>
+</svg>
+
+
+
+<header>
+    <div class="skippy visually-hidden-focusable">
+        <div class="container p-0">
+            <a class=" d-inline-block p-2 m-1" href="#maincontent">Skip to main content</a>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand navbar-dark bg-dark px-3 py-2 text-white" aria-label="Global site navigation">
+        <div class="container">
+        <a class="navbar-brand d-flex align-items-center my-0 me-auto text-white text-decoration-none" href="#">
+        <svg class="gb-i me-2" width="45" height="45" role="img"><use xlink:href="#sonobe"/></svg>
+        <span>Logic Learner</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#globalNavLL" aria-controls="globalNavLL" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="globalNavLL">
+        <ul class="nav col-auto my-2 justify-content-center my-md-0 text-small ms-auto">
+        <li>
+        <a href="#" class="nav-link text-white">
+        <svg class="gb-i d-block mx-auto mb-1" width="24" height="24" role="img"><use xlink:href="#home"/></svg>
+        Home
+        </a>
+        </li>
+        <li>
+        <a href="#" class="nav-link text-white">
+        <svg class="gb-i d-block mx-auto mb-1" width="24" height="24" role="img"><use xlink:href="#grid"/></svg>
+        Levels
+        </a>
+        </li>
+        </ul>
+        </div>
+        </div>
+    </nav>
+</header>
+
+
+
+
+
+<main>
+    <header>
+    </header>
+</main>
+
+<footer class="border container">
+    <img src="logo.svg" style="width: 1rem;">
+    <div class="d-inline-block d-sm-none bg-primary text-white">X-Small, None, <576px </div>
+    <div class="d-none d-sm-inline-block d-md-none bg-secondary text-white">Small, sm, ≥576px </div>
+    <div class="d-none d-md-inline-block d-lg-none bg-success text-white">Medium, md, ≥768px </div>
+    <div class="d-none d-lg-inline-block d-xl-none bg-danger text-white">Large, lg, ≥992px </div>
+    <div class="d-none d-xl-inline-block d-xxl-none bg-warning text-dark">Extra large, xl, ≥1200px </div>
+    <div class="d-none d-xxl-inline-block bg-info text-dark">Extra extra large, xxl, ≥1400px </div>
+</footer>
+
+
+
+
+</body>
+</html>
