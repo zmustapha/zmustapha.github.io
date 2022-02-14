@@ -68,8 +68,8 @@
     text-decoration: none;
 }
 .navbar-brand img {
-    width: 2rem;
-    height: 2rem;
+    width: 2.25rem;
+    height: 2.25rem;
 }
 
 @media (min-width: 768px) {
