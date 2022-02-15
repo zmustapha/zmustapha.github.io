@@ -42,76 +42,12 @@ body {
     padding: 0.75rem;
 }
 
-.content-body {
-    margin-top: 3rem !important;
-    margin-bottom: 3rem !important;
-}
 
-.question-cards {
-  list-style: none;
-  counter-reset: question-item-counter;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.75rem;
-    width: 100%;
-}
-@media (min-width: 768px) {
-.question-cards {
-    width: 36.25rem;
-}
-}
-@media (min-width: 992px) {
-.question-cards {
-    width: 48.74rem;
-}
-}
-@media (min-width: 1200px) {
-.question-cards {
-    width: 58.125rem;
-}
-}
-@media (min-width: 1400px) {
-.question-cards {
-    width: 67.5rem;
-}
-}
-
-
-
-.question-cards li {
-  padding: 0.75rem;
-  counter-increment: question-item-counter;
-  border: 1px dotted #ccc;
-  border-radius: 0.25rem;
-  display: flex;
-  margin-bottom: 1.5rem;
-}
-.question-cards li::before {
-  display: block;
-  width: 4rem;
-  content: "" counter(question-item-counter);
-  font-weight: 600;
-  font-size: 3rem;
-  margin-right: 0.5rem;
-  line-height: 1;
-}
-
-.question-text {
-    align-self: center !important;
-    margin-right: 1rem;
-}
-
-.question-state {
-    align-self: center !important;
-    width: 3rem;
-    height: 3rem;
-}
 
 .question-statement {
     /*font-style: italic;*/
     background-color: #f3f3f3;
-    padding: 0.25rem 0.5rem;
+    padding: 0 0.125rem 0.25rem 0.125rem;
     border-radius: 0.25rem;
     font-weight: 600;
 }
