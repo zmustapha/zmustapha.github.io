@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="top-bar.css">
     <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="button.css">
-    <title>Question Dashboard - Logic Learner</title>
+    <title>Welcome - Logic Learner</title>
 </head>
 <body>
 
@@ -26,7 +26,7 @@
     <div class="navbar top-bar">
         <div class="container top-bar__container">
             <a href="/" class="navbar-brand d-flex align-items-center">
-            <img class="gn-i me-3" src="shapes.svg" style="filter: invert(98%) sepia(75%) saturate(128%) hue-rotate(275deg) brightness(112%) contrast(100%);">
+            <img class="gn-i me-3" src="sonobe.svg" style="filter: invert(98%) sepia(75%) saturate(128%) hue-rotate(275deg) brightness(112%) contrast(100%);">
             <span>Logic Learner</span>
             </a>
 
@@ -60,16 +60,12 @@
     <header class="py-2" style="background-color: #efefef;">
         <div class="container d-flex justify-content-start">
             <figure class="avatar-level--md bg-dark me-3 align-self-center" style="--bs-bg-opacity: .25;" aria-hidden="true">
-                <img src="sonobe-i.svg" style="width: 100%;">
+                <img src="sonobe.svg" style="width: 100%;">
             </figure>
             <h1>
-                <span class="fs-6 d-block">LEVEL I</span>
-                <span class="d-block">Novice</span>
+                <span class="d-block">Home page</span>
                 <span class="fs-6 d-block">Some descriptive text here</span>
             </h1>
-            <div class="ms-auto fs-4 q-completion align-self-center" aria-label="Questions completed">
-                3/10
-            </div>
         </div>
     </header>
 
@@ -90,28 +86,28 @@
     <div class="col-1 border border-primary border-end-0">11</div>
     <div class="col-1 border border-primary">12</div>
 </div>
- -->
 </div>
+ -->
 
 
     <section class="container content-body" id="maincontent">
-        <h2 id="cardset-label" class="visually-hidden">Proof questions list in Novice level</h2>
+        <h2 id="cardset-label" class="text-center">Choose a level</h2>
 
-        <ol class="cardset" aria-labelledby="cardset-label">
+        <ol class="cardset cardset-levels" aria-labelledby="cardset-label">
             <li class="cardset-card">
-                <div class="cardset-card__number">1</div>
-                <div class="cardset-card__title">Prove that <span class="question-statement">¬(¬p)</span> is logically equivalent to <span class="question-statement">p</span>.</div>
-                <div class="cardset-card__status" aria-label="Status: in progress"><img src="icon-status-none.svg" title="Not started"></div>
+                <div class="cardset-card__avatar"><img src="sonobe-i.svg"></div>
+                <div class="cardset-card__title"><a href="questions-dashboard.html">Novice</a></div>
+                <div class="cardset-card__status" aria-label="Status: in progress">1</div>
             </li>
             <li class="cardset-card">
-                <div class="cardset-card__number">9</div>
-                <div class="cardset-card__title">Prove that <span class="question-statement">(p∨q)→r</span> is logically equivalent to <span class="question-statement">(p→r)∧(q→r)</span>.</div>
-                <div class="cardset-card__status" aria-label="Status: in progress"><img src="icon-status-inprogress.svg" title="In progress"></div>
+                <div class="cardset-card__avatar"><img src="sonobe-ii.svg"></div>
+                <div class="cardset-card__title">Learner</div>
+                <div class="cardset-card__status" aria-label="Status: in progress">1</div>
             </li>
             <li class="cardset-card">
-                <div class="cardset-card__number">10</div>
-                <div class="cardset-card__title">Prove that <span class="question-statement">(p∨q)→r</span> is logically equivalent to <span class="question-statement">(p→r)∧(q→r)</span>.</div>
-                <div class="cardset-card__status" aria-label="Status: in progress"><img src="icon-status-completed.svg" title="Completed"></div>
+                <div class="cardset-card__avatar"><img src="sonobe-iii.svg"></div>
+                <div class="cardset-card__title">Apprentice</div>
+                <div class="cardset-card__status" aria-label="Status: in progress">1</div>
             </li>
         </ol>
 
