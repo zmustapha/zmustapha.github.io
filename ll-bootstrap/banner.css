@@ -130,6 +130,25 @@
     padding-top: 0.75rem;
     padding-top: 0.75rem;
 }
+
+.exercise-space-banner a {
+    text-decoration: none;
+}
+
+.exercise-space-banner .main-banner__prompt {
+    margin-top: -0.75rem;
+    margin-right: 0.75rem;
+    align-self: center;
+    line-height: 1;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 4rem;
+    font-weight: 400;
+}
+@media (min-width: 768px) {
+.exercise-space-banner .main-banner__prompt {
+    }
+}
 .exercise-space-banner .main-banner__avatar {
     width: 4rem;
     height: 4rem;
