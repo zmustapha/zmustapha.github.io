@@ -8,11 +8,14 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="skippy.css">
+    <link rel="stylesheet" href="typeface.css">
     <link rel="stylesheet" href="icon.css">
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="top-bar.css">
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="question.css">
     <link rel="stylesheet" href="button.css">
     <link rel="stylesheet" href="footer.css">
     <title>Question Dashboard - Logic Learner</title>
@@ -58,7 +61,7 @@
     <header class="main-banner">
         <div class="container d-flex justify-content-start">
             <figure class="main-banner__avatar align-self-center" aria-hidden="true">
-                <img src="sonobe-i.svg" style="width: 100%;">
+                <img src="sonobe-i.svg">
             </figure>
             <h1 class="align-self-center">
                 <span class="main-banner__subhead">LEVEL I</span>
@@ -93,23 +96,38 @@
 
 
     <section class="container content-body" id="maincontent">
-        <h2 id="cardset-label" class="visually-hidden">Proof questions list in Novice level</h2>
+        <h2 id="cardset-label" class="text-center mb-4">Questions in Novice level:</h2>
 
-        <ol class="cardset" aria-labelledby="cardset-label">
+        <ol class="cardset cardset-listnum" aria-labelledby="cardset-label">
             <li class="cardset-card">
-                <div class="cardset-card__number">1</div>
+                <!-- <div class="cardset-card__number">1</div> -->
                 <div class="cardset-card__title">Prove that <span class="question-statement">¬(¬p)</span> is logically equivalent to <span class="question-statement">p</span>.</div>
-                <div class="cardset-card__status" aria-label="Status: in progress"><img src="icon-status-none.svg" title="Not started"></div>
+                <div class="cardset-card__status" aria-label="Status: in progress"><img src="icon-status-initial.svg" title="Not started"></div>
             </li>
             <li class="cardset-card">
-                <div class="cardset-card__number">9</div>
+                <!-- <div class="cardset-card__number">9</div> -->
                 <div class="cardset-card__title">Prove that <span class="question-statement">(p∨q)→r</span> is logically equivalent to <span class="question-statement">(p→r)∧(q→r)</span>.</div>
                 <div class="cardset-card__status" aria-label="Status: in progress"><img src="icon-status-inprogress.svg" title="In progress"></div>
             </li>
             <li class="cardset-card">
-                <div class="cardset-card__number">10</div>
+                <!-- <div class="cardset-card__number">10</div> -->
                 <div class="cardset-card__title">Prove that <span class="question-statement">(p∨q)→r</span> is logically equivalent to <span class="question-statement">(p→r)∧(q→r)</span>.</div>
-                <div class="cardset-card__status" aria-label="Status: in progress"><img src="icon-status-completed.svg" title="Completed"></div>
+                <div class="cardset-card__status" aria-label="Status: in progress"><img src="icon-status-complete.svg" title="Completed"></div>
+            </li>
+            <li class="cardset-card">
+                <!-- <div class="cardset-card__number">1</div> -->
+                <div class="cardset-card__title">Prove that <span class="question-statement">¬(¬p)</span> is logically equivalent to <span class="question-statement">p</span>.</div>
+                <div class="cardset-card__status" aria-label="Status: in progress"><img src="icon-status-initial.svg" title="Not started"></div>
+            </li>
+            <li class="cardset-card">
+                <!-- <div class="cardset-card__number">9</div> -->
+                <div class="cardset-card__title">Prove that <span class="question-statement">(p∨q)→r</span> is logically equivalent to <span class="question-statement">(p→r)∧(q→r)</span>.</div>
+                <div class="cardset-card__status" aria-label="Status: in progress"><img src="icon-status-inprogress.svg" title="In progress"></div>
+            </li>
+            <li class="cardset-card">
+                <!-- <div class="cardset-card__number">10</div> -->
+                <div class="cardset-card__title">Prove that <span class="question-statement">(p∨q)→r</span> is logically equivalent to <span class="question-statement">(p→r)∧(q→r)</span>.</div>
+                <div class="cardset-card__status" aria-label="Status: in progress"><img src="icon-status-complete.svg" title="Completed"></div>
             </li>
         </ol>
 
