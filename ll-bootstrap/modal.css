@@ -1,5 +1,6 @@
 .law-definition {
-    border: 1px solid #ccc;
+    border-bottom: 1px dotted #ccc;
+    padding: 2rem 1rem;
 }
 
 .modal-dialog-variable {
