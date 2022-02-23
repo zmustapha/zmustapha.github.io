@@ -14,7 +14,8 @@
 @media (min-width: 768px) {
 .exercise-space {
     padding: 0;
-    width: 43.5rem;
+    /*width: 43.5rem;*/
+    width: 100%;
     }
 }
 @media (min-width: 992px) {
