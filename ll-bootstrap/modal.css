@@ -2,31 +2,31 @@
     border: 1px solid #ccc;
 }
 
-.modal-variable {
+.modal-dialog-variable {
     /*max-width: 20rem;*/
 }
 @media (min-width: 576px) {
-.modal-variable {
+.modal-dialog-variable {
     max-width: 31rem;
     }
 }
 @media (min-width: 768px) {
-.modal-variable {
+.modal-dialog-variable {
     max-width: 43rem;
     }
 }
 @media (min-width: 992px) {
-.modal-variable {
+.modal-dialog-variable {
     max-width: 50rem;
     }
 }
 @media (min-width: 1200px) {
-.modal-variable {
+.modal-dialog-variable {
     max-width: 50rem;
     }
 }
 @media (min-width: 1400px) {
-.modal-variable {
+.modal-dialog-variable {
     max-width: 50rem;
     }
 }
