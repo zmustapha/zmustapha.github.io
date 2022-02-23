@@ -1,6 +1,6 @@
 .ll-button {
     font-family: Quicksand;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     background-color: #efefef;
     padding-right: 1rem;
@@ -33,4 +33,22 @@
     margin-top: 4rem;
     margin-right: auto;
     margin-left: auto;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #198754;
+    border-color: #198754;
+}
+
+.btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: 0.3rem;
 }

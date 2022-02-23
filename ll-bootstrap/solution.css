@@ -7,3 +7,38 @@
     font-weight: 600;
     font-size: 1.25rem;
 }
+
+
+.solution-actions {
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 576px) {
+.solution-actions {
+    flex-direction: column;
+    }
+}
+@media (min-width: 768px) {
+.solution-actions {
+    flex-direction: row;
+    }
+}
+@media (min-width: 992px) {
+.solution-actions {
+    flex-direction: row;
+    }
+}
+@media (min-width: 1200px) {
+.solution-actions {
+    flex-direction: row;
+    }
+}
+@media (min-width: 1400px) {
+.solution-actions {
+    flex-direction: row;
+    }
+}

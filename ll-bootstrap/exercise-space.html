@@ -127,19 +127,17 @@
                             <input type="text" class="form-control" id="inputStatement" placeholder="Logic statement">
                         </div>
                         <div class="col-12 col-md-3 align-self-end text-center text-md-left">
-                            <button type="button" class="btn ll-button me-2">
+                            <button type="button" class="btn ll-button btn-danger me-2">
                                 <span class="ll-button__text">Delete</span>
                             </button>
-                            <button type="button" class="btn ll-button me-2">
+                            <button type="button" class="btn ll-button btn-success me-2">
                                 <span class="ll-button__text">Go!</span>
                             </button>
                         </div>
                     </div>
                 </form>
             </div>
-        </div>
 
-        <div class="exercise-solution">
             <div class="solution-step">
                 <p class="solution-step__prompt">Next,</p>
                 <form>
@@ -157,17 +155,34 @@
                             <input type="text" class="form-control" id="inputStatement" placeholder="Logic statement">
                         </div>
                         <div class="col-12 col-md-3 align-self-end text-center text-md-left">
-                            <button type="button" class="btn ll-button me-2">
+                            <button type="button" class="btn ll-button btn-danger me-2">
                                 <span class="ll-button__text">Delete</span>
                             </button>
-                            <button type="button" class="btn ll-button me-2">
+                            <button type="button" class="btn ll-button btn-success me-2">
                                 <span class="ll-button__text">Go!</span>
                             </button>
                         </div>
                     </div>
                 </form>
             </div>
+
+            <div class="solution-actions">
+            <button type="button" class="btn btn-lg ll-button mx-3 my-2 my-md-0">
+                <span class="ll-button__text">I need a hint</span>
+            </button>
+            <button type="button" class="btn btn-lg ll-button mx-3 my-2 my-md-0">
+                <span class="ll-button__text">Show solution</span>
+            </button>
+            <button type="button" class="btn btn-lg ll-button mx-3 my-2 my-md-0">
+                <span class="ll-button__text">Reset proof</span>
+            </button>
+            </div>
+
         </div>
+
+
+
+
 
 
 <!-- 
@@ -284,9 +299,27 @@
   </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="catModal" tabindex="-1" aria-labelledby="catModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="height:500px;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="catModalLabel">Cat</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="cat"><img src="cat.svg" /></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-    <button type="button" class="cat-button btn btn-light ll-button">
+    <button type="button" class="cat-button btn btn-light ll-button"
+                     data-bs-toggle="modal" data-bs-target="#catModal">
     <span class='ll-icons ll-button__icon'><img src="cat.svg" /></span>
     <span class="ll-button__text d-inline-block d-sm-none">XS, kitten cat, <576px </span>
     <span class="ll-button__text d-none d-sm-inline-block d-md-none">SM, small cat, ≥576px </span>
