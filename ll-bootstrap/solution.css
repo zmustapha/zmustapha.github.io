@@ -1,0 +1,9 @@
+.solution-step {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed #bbb;
+}
+.solution-step__prompt {
+    font-weight: 600;
+    font-size: 1.25rem;
+}

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="question.css">
+    <link rel="stylesheet" href="solution.css">
     <link rel="stylesheet" href="button.css">
     <link rel="stylesheet" href="footer.css">
     <title>Exercise Space - Logic Learner</title>
@@ -105,14 +106,14 @@
 
 
     <section class="container content-body exercise-space" id="maincontent">
-        <p class="fs-2 mt-5 mb-4">Prove that  <span class="question-statement">(p∨q)→r</span> is logically equivalent to <span class="question-statement">(p→r)∧(q→r)</span>.</p>
+        <p class="question fs-2">Prove that  <span class="question-statement">(p∨q)→r</span> is logically equivalent to <span class="question-statement">(p→r)∧(q→r)</span>.</p>
 
         <div class="exercise-solution">
-            <div class="solution-step py-4" style="border-bottom: 1px dashed #bbb;">
+            <div class="solution-step">
                 <p class="solution-step__prompt">To begin this proof,</p>
                 <form>
                     <div class="solution-step__form row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
                             <label for="inputLaw" class="form-label">If I apply this law...</label>
                             <select id="inputLaw" class="form-select">
                                 <option selected>Choose one</option>
@@ -120,15 +121,15 @@
                                 <option>...</option>
                             </select>
                         </div>
-                        <div class="col-12 col-md-5">
-                            <label for="inputStatement" class="form-label">Then I'll get this statement...</label>
+                        <div class="col-12 col-md-5 mb-4 mb-md-0">
+                            <label for="inputStatement" class="form-label">then I'll get this statement...</label>
                             <input type="text" class="form-control" id="inputStatement" placeholder="Logic statement">
                         </div>
-                        <div class="col-12 col-md-3 align-self-end">
-                            <button type="button" class="btn ll-button">
+                        <div class="col-12 col-md-3 align-self-end text-center text-md-left">
+                            <button type="button" class="btn ll-button mx-2">
                                 <span class="ll-button__text">Delete</span>
                             </button>
-                            <button type="button" class="btn ll-button">
+                            <button type="button" class="btn ll-button mx-2">
                                 <span class="ll-button__text">Go!</span>
                             </button>
                         </div>
@@ -138,11 +139,11 @@
         </div>
 
         <div class="exercise-solution">
-            <div class="solution-step py-4" style="border-bottom: 1px dashed #bbb;">
+            <div class="solution-step">
                 <p class="solution-step__prompt">Next,</p>
                 <form>
                     <div class="solution-step__form row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-4 mb-4 mb-md-0">
                             <label for="inputLaw" class="form-label">If I apply this law...</label>
                             <select id="inputLaw" class="form-select">
                                 <option selected>Choose one</option>
@@ -150,15 +151,15 @@
                                 <option>...</option>
                             </select>
                         </div>
-                        <div class="col-12 col-md-5">
-                            <label for="inputStatement" class="form-label">Then I'll get this statement...</label>
+                        <div class="col-12 col-md-5 mb-4 mb-md-0">
+                            <label for="inputStatement" class="form-label">then I'll get this statement...</label>
                             <input type="text" class="form-control" id="inputStatement" placeholder="Logic statement">
                         </div>
-                        <div class="col-12 col-md-3 align-self-end">
-                            <button type="button" class="btn ll-button">
+                        <div class="col-12 col-md-3 align-self-end text-center text-md-left">
+                            <button type="button" class="btn ll-button mx-2">
                                 <span class="ll-button__text">Delete</span>
                             </button>
-                            <button type="button" class="btn ll-button">
+                            <button type="button" class="btn ll-button mx-2">
                                 <span class="ll-button__text">Go!</span>
                             </button>
                         </div>
@@ -166,6 +167,7 @@
                 </form>
             </div>
         </div>
+
 
 
 
