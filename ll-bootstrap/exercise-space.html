@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="top-bar.css">
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="question.css">
     <link rel="stylesheet" href="solution.css">
     <link rel="stylesheet" href="button.css">
@@ -37,7 +38,7 @@
             <span>Logic Learner</span>
             </a>
 
-            <ul class="nav col-auto top-bar__nav">
+            <ul class="nav col-6 top-bar__nav">
                 <li>
                   <a href="levels-dashboard.html" class="nav-link">
                     <img class="gn-i d-block mx-auto mb-1 temp-icon" src="temp-icon-home.svg">
@@ -184,77 +185,79 @@
 
 <!-- Modal -->
 <div class="modal fade" id="lawSheetModal" tabindex="-1" aria-labelledby="lawSheetModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-scrollable modal-variable">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="lawSheetModalLabel">Laws of Propositional Logic</h5>
+        <h4 class="modal-title" id="lawSheetModalLabel">Laws of Propositional Logic</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-            <p>
+        <div class="row">
+            <section class="col-12 col-md-6 law-definition">
             De Morgan’s laws:<br />
             ¬( p ∧ q ) ≡ ¬p ∨ ¬q<br />
             ¬( p ∨ q ) ≡ ¬p ∧ ¬q<br />
-            </p>
+            </section>
 
-            <p>
+            <section class="col-12 col-md-6 law-definition">
             Idempotent laws:<br />
             p ∨ p ≡ p<br />
             p ∧ p ≡ p<br />
-            </p>
+            </section>
 
-            <p>
+            <section class="col-12 col-md-6 law-definition">
             Associative laws:<br />
             ( p ∨ q ) ∨ r ≡ p ∨ ( q ∨ r )<br />
             ( p ∧ q ) ∧ r ≡ p ∧ ( q ∧ r )<br />
-            </p>
+            </section>
 
-            <p>
+            <section class="col-12 col-md-6 law-definition">
             Commutative laws:<br />
             p ∨ q ≡ q ∨ p<br />
             p ∧ q ≡ q ∧ p<br />
-            </p>
+            </section>
 
-            <p>
+            <section class="col-12 col-md-6 law-definition">
             Distributive laws:<br />
             p ∨ ( q ∧ r ) ≡ ( p ∨ q ) ∧ ( p ∨ r )<br />
             p ∧ ( q ∨ r ) ≡ ( p ∧ q ) ∨ ( p ∧ r )<br />
-            </p>
+            </section>
 
-            <p>
+            <section class="col-12 col-md-6 law-definition">
             Identity laws:<br />
             p ∨ F ≡ p<br />
             p ∧ T ≡ p<br />
-            </p>
+            </section>
 
-            <p>
+            <section class="col-12 col-md-6 law-definition">
             Domination laws:<br />
             p ∧ F ≡ F<br />
             p ∨ T ≡ T<br />
-            </p>
+            </section>
 
-            <p>
+            <section class="col-12 col-md-6 law-definition">
             Double negation law:<br />
             ¬¬p ≡ p<br />
-            </p>
+            </section>
 
-            <p>
+            <section class="col-12 col-md-6 law-definition">
             Complement laws:<br />
             p ∧ ¬p ≡ F ¬T ≡ F<br />
             p ∨ ¬p ≡ T ¬F ≡ T<br />
-            </p>
+            </section>
 
-            <p>
+            <section class="col-12 col-md-6 law-definition">
             Absorption laws:<br />
             p ∨ (p ∧ q) ≡ p<br />
             p ∧ (p ∨ q) ≡ p<br />
-            </p>
+            </section>
 
-            <p>
+            <section class="col-12 col-md-6 law-definition">
             Conditional identities:<br />
             p → q ≡ ¬p ∨ q<br />
             p ↔ q ≡ ( p → q ) ∧ ( q → p )<br />
-            </p>
+            </section>
+        </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
