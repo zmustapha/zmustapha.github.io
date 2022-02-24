@@ -1,0 +1,117 @@
+.flame1{
+		text-align: center;
+		height: 100px;
+		position: absolute;
+		bottom: 0;
+		left: 150px;
+		z-index: 300;
+	}
+
+.flame1 img {
+		height: 100px;
+	}
+
+
+.flame2{
+		text-align: center;
+		height: 200px;
+		position: absolute;
+		bottom: -50px;
+		left: 100px;
+		z-index: 100;
+	}
+
+.flame2 img {
+		height: 200px;
+	}
+
+
+.flame3{
+		text-align: center;
+		height: 150px;
+		position: absolute;
+		bottom: -20px;
+		left: 160px;
+		z-index: 200;
+	}
+
+.flame3 img {
+		height: 150px;
+	}
+
+
+@keyframes rotating {
+		from {
+		  transform: rotate(-10deg);
+		}
+		to {
+		  transform: rotate(10deg);
+		}
+	  }
+    
+     .rotating {
+		animation: rotating 0.5s linear infinite alternate;
+	  }
+
+@keyframes rotating2 {
+		from {
+		  transform: rotate(10deg);
+		}
+		to {
+		  transform: rotate(-15deg);
+		}
+	  }
+    
+     .rotating2 {
+		animation: rotating2 1.5s linear infinite alternate;
+	  }
+
+@keyframes rotating3 {
+		from {
+		  transform: rotate(35deg);
+		}
+		to {
+		  transform: rotate(-15deg);
+		}
+	  }
+    
+     .rotating3 {
+		animation: rotating3 0.75s linear infinite alternate;
+	  }
+
+
+div.home {
+  width: 200px;
+  height: 190px;
+position: absolute;
+		bottom: 0;
+		right: -10px;
+		z-index: 0;
+  /* 
+animation-name: example;
+  animation-duration: 3s;
+ */
+}
+
+div.home img {
+	height: 190px;
+}
+
+
+
+div.cat {
+  width: 150px;
+  height: 90px;
+position: absolute;
+		bottom: 0;
+		left: 10px;
+		z-index: 400;
+  /* 
+animation-name: example;
+  animation-duration: 3s;
+ */
+}
+
+div.cat img {
+	height: 90px;
+}

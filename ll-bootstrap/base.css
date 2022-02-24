@@ -35,25 +35,3 @@
 }
 
 
-div.cat {
-  width: 150px;
-  height: 150px;
-background-color: #efefef;
-position: relative;
-  animation-name: example;
-  animation-duration: 3s;
-}
-
-div.cat img {
-    height: 70%;
-    position: absolute;
-    bottom: 0;
-}
-
-@keyframes example {
-  0% {background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-background-image: url('flames.png'); left:0px; top:200px;}
-  100%   {background-color:#efefef; left:0px; top:0px;}
-}
