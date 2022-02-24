@@ -56,6 +56,8 @@
 @media (max-width: 767px) {
     .btn-shrink {
         padding: 0.25rem 0.5rem;
+        display: block;
+        margin-left: auto;
     }
 }
 
