@@ -1,0 +1,28 @@
+.modal-dialog-variable {
+    /*max-width: 20rem;*/
+}
+@media (min-width: 576px) {
+.modal-dialog-variable {
+    max-width: 31rem;
+    }
+}
+@media (min-width: 768px) {
+.modal-dialog-variable {
+    max-width: 43rem;
+    }
+}
+@media (min-width: 992px) {
+.modal-dialog-variable {
+    max-width: 50rem;
+    }
+}
+@media (min-width: 1200px) {
+.modal-dialog-variable {
+    max-width: 50rem;
+    }
+}
+@media (min-width: 1400px) {
+.modal-dialog-variable {
+    max-width: 50rem;
+    }
+}
