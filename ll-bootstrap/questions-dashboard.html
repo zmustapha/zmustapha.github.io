@@ -15,8 +15,11 @@
     <link rel="stylesheet" href="top-bar.css">
     <link rel="stylesheet" href="banner.css">
     <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="modal.css">
     <link rel="stylesheet" href="question.css">
+    <link rel="stylesheet" href="solution.css">
     <link rel="stylesheet" href="button.css">
+    <link rel="stylesheet" href="flames.css">
     <link rel="stylesheet" href="footer.css">
     <title>Question Dashboard - Logic Learner</title>
 </head>
@@ -164,10 +167,44 @@
             </li>
         </ol>
  -->
-    <button type="button" class="cat-button btn btn-light ll-button">
+<!-- Cat Modal -->
+<div class="modal fade" id="catModal" tabindex="-1" aria-labelledby="catModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content" style="height:500px;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="catModalLabel">Cat</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+<div style="position: relative; border-bottom: 1rem solid #ccc; height: 250px; width: 300px; overflow: hidden">
+<div class="home">
+<img src="home-icon.svg" />
+</div>
+<div class="flame1">
+<img class="rotating" src="flames.png" />
+</div>
+<div class="flame2">
+<img class="rotating2" src="flames.png" />
+</div>
+<div class="flame3">
+<img class="rotating3" src="flames.png" />
+</div>
+        <div class="cat"><img src="cat.svg" /></div>
+</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <button type="button" class="cat-button btn btn-light ll-button"
+                     data-bs-toggle="modal" data-bs-target="#catModal">
     <span class='ll-icons ll-button__icon'><img src="cat.svg" /></span>
     <span class="ll-button__text d-inline-block d-sm-none">XS, kitten cat, <576px </span>
-    <span class="ll-button__text d-none d-sm-inline-block d-md-none">SM, small cat, ≥576px </span>
+    <span class="ll-button__text d-none d-sm-inline-block d-md-none">SM, smol cat, ≥576px </span>
     <span class="ll-button__text d-none d-md-inline-block d-lg-none">MD, medium cat, ≥768px </span>
     <span class="ll-button__text d-none d-lg-inline-block d-xl-none">LG, chonky cat, ≥992px </span>
     <span class="ll-button__text d-none d-xl-inline-block d-xxl-none">XL, hefty chonky cat, ≥1200px </span>
@@ -180,9 +217,19 @@
 
 </main>
 
-<footer class="bg-light">
+<footer>
     <div class="container">
-        Footer
+     <ul class="nav navlist--footer">
+        <li class="nav-item">
+            <a href="/about/">About Logic Learner</a>
+        </li>
+        <li class="nav-item">
+            <a href="/contact/" title="Contact us">Contact Us</a>
+        </li>
+    </ul>
+    <p class="ll-license text-center mt-3 fs-6">Logic Learner open-source code is on <a itemprop="license" rel="license noopener noreferrer" href="https://github.com/ccnmtl/logiclearner">Github</a> with <a itemprop="license" rel="license noopener noreferrer" href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPLv3</a> license.</p>
+    <div itemscope itemtype="http://schema.org/EducationalOrganization" class='text-center'><a href="http://ctl.columbia.edu" rel="noopener noreferrer" target="_blank" itemprop="url" class='d-inline-block'><img src="logo-ctl.svg" class="footer__logo img-fluid" alt="" itemprop="logo" /><span class="visually-hidden" itemprop="name">Center for Teaching and Learning at Columbia University</span></a></div>
+
     </div>
 </footer>
 

@@ -1,4 +1,36 @@
 footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    position: relative;
+    bottom: 0;
+    background-color: #efefef;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+}
+
+.footer__logo {
+    display: block;
+    width: 15rem;
+    margin: 2rem auto;
+}
+@media (min-width: 576px) {
+.footer__logo {
+    width: 25rem;
+    margin: 3rem auto;
+    }
+}
+
+
+.navlist--footer {
+    justify-content: center;
+}
+
+.navlist--footer a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.navlist--footer a:hover {
+    color: $black;
+    text-decoration: underline;
+    background-color: #eff6ff;
 }
