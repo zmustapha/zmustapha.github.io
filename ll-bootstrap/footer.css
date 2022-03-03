@@ -1,9 +1,11 @@
+/* Implemented */
+
 footer {
     position: relative;
     bottom: 0;
     background-color: #efefef;
     padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
 }
 
 .footer__logo {
@@ -11,7 +13,7 @@ footer {
     width: 15rem;
     margin: 2rem auto;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
 .footer__logo {
     width: 25rem;
     margin: 3rem auto;
@@ -21,6 +23,15 @@ footer {
 
 .navlist--footer {
     justify-content: center;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+.navlist--footer {
+    font-size: 1.5rem;
+    flex-direction: row;
+    }
 }
 
 .navlist--footer a {
