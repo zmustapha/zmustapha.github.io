@@ -62,157 +62,167 @@
 
 
 <main>
-<div class="" id="tutorial-container">
-    <header class="main-banner exercise-space-banner sticky-top">
-        <div class="container d-flex justify-content-start">
-            <div class="main-banner__prompt"><a href="questions-dashboard.html">&lsaquo;</a></div>
-            <figure class="main-banner__avatar align-self-center" aria-hidden="true">
-                <img src="sonobe-0.svg">
-            </figure>
-            <h1 class="align-self-center"><a href="questions-dashboard.html">
-                <span class="main-banner__subhead">TUTORIAL:</span><span class="main-banner__title">Using Logic Learner</span>
-            </a></h1>
-            <div class="ms-auto align-self-center text-end" id="helper-modal">
-                <button type="button" class="btn btn-light ll-button me-0 me-md-1 mb-2 mb-md-0 btn-shrink"
-                     data-bs-toggle="modal" data-bs-target="#lawSheetModal">
-                    <span class='ll-icons ll-button__icon'><img src="icon-clipboard.svg" /></span>
-                    <span class="ll-button__text">Law sheet</span>
-                </button>
-                <button type="button" class="btn btn-light ll-button btn-shrink"
-                     data-bs-toggle="modal" data-bs-target="#keyBindingModal">
-                    <span class='ll-icons ll-button__icon'><img src="icon-keyboard.svg" /></span>
-                    <span class="ll-button__text">Logic symbols</span>
-                </button>
+    <div class="" id="tutorial-container">
+        <header class="main-banner exercise-space-banner sticky-top">
+            <div class="container d-flex justify-content-start">
+                <div class="main-banner__prompt"><a href="questions-dashboard.html">&lsaquo;</a></div>
+                <figure class="main-banner__avatar align-self-center" aria-hidden="true">
+                    <img src="sonobe-0.svg">
+                </figure>
+                <h1 class="align-self-center"><a href="questions-dashboard.html">
+                    <span class="main-banner__subhead">TUTORIAL:</span><span class="main-banner__title">Using Logic Learner</span>
+                </a></h1>
+                    <button class="tutorial1-prompt ms-auto align-self-center" data-segment="modal">
+                        <div class="tutorial1-prompt__text">1</div>
+                    </button>
+                <div class="align-self-center text-end" id="helper-modal">
+                    <button type="button" class="btn btn-light ll-button me-0 me-md-1 mb-2 mb-md-0 btn-shrink"
+                         data-bs-toggle="modal" data-bs-target="#lawSheetModal">
+                        <span class='ll-icons ll-button__icon'><img src="icon-clipboard.svg" /></span>
+                        <span class="ll-button__text">Law sheet</span>
+                    </button>
+                    <button type="button" class="btn btn-light ll-button btn-shrink"
+                         data-bs-toggle="modal" data-bs-target="#keyBindingModal">
+                        <span class='ll-icons ll-button__icon'><img src="icon-keyboard.svg" /></span>
+                        <span class="ll-button__text">Logic symbols</span>
+                    </button>
+                </div>
             </div>
-        </div>
-    </header>
-
-
-
-    <section class="container content-body exercise-space tutorial-section">
+        </header>
+        <section class="container content-body exercise-space tutorial-section">
     
-    <p>
-    Welcome to Logic Learner. <a href="#testing123">Before you begin</a> using this tool to learn propositional logic, here's a tour. In hac habitasse platea dictumst. Duis ac mi rhoncus, mattis ante nec, posuere augue. Suspendisse potenti. Donec leo massa, dictum ac rutrum aliquam, fringilla et urna.
-    </p>
-    <p>Suspendisse consectetur justo et rhoncus tristique. Cras bibendum eros a suscipit ullamcorper. Nullam vitae neque quis dolor dapibus sollicitudin vitae sed elit. Vestibulum at.
-    </p>
+        <p>
+        Welcome to Logic Learner. Before you begin using this tool to learn propositional logic, here's a tour. In hac habitasse platea dictumst. Duis ac mi rhoncus, mattis ante nec, posuere augue. Suspendisse potenti. Donec leo massa, dictum ac rutrum aliquam, fringilla et urna.
+        </p>
+        <p>
+        Suspendisse consectetur justo et rhoncus tristique. Cras bibendum eros a suscipit ullamcorper. Nullam vitae neque quis dolor dapibus sollicitudin vitae sed elit. Vestibulum at.
+        </p>
 
-<button class="tutorial-prompt btn btn-secondary" data-segment="modal">Law sheet and logic symbols</button>
-
-
-<button class="tutorial-prompt btn btn-secondary" data-segment="question">Logic proof question</button>
-
-
-<button class="tutorial-prompt btn btn-secondary" data-segment="solution">Solution steps</button>
+    <div class="row">
+    <button class="col-3 tutorial-prompt btn btn-outline-secondary" data-segment="modal">Law sheet and logic symbols</button>
 
 
-<button class="tutorial-prompt btn btn-secondary" data-segment="submission">Go, or delete</button>
+    <button class="col-3 tutorial-prompt btn btn-outline-secondary" data-segment="question">Logic proof question</button>
 
 
-<button class="tutorial-prompt btn btn-secondary" data-segment="hint">Hints</button>
+    <button class="col-3 tutorial-prompt btn btn-outline-secondary" data-segment="solution">Solution steps</button>
 
 
-<button class="tutorial-prompt btn btn-secondary" data-segment="solutionkey">Solution key</button>
+    <button class="col-3 tutorial-prompt btn btn-outline-secondary" data-segment="submission">Go, or delete</button>
 
 
-<button class="tutorial-prompt btn btn-secondary" data-segment="reset">Reset proof</button>
-
-<div class="guide__box guide-text" id="guide-modal">
-    <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
-    <h2>Law sheet</h2>
-    <p>Aliquam vel nisl sed leo cursus iaculis efficitur sed lectus. In vel felis vitae nisi feugiat euismod ut vel enim. Suspendisse accumsan a neque nec pharetra. Suspendisse massa est, rhoncus.</p>
-    <h2>Logic symbols</h2>
-    <p>Aliquam vel nisl sed leo cursus iaculis efficitur sed lectus. In vel felis vitae nisi feugiat euismod ut vel enim. Suspendisse accumsan a neque nec pharetra. Suspendisse massa est, rhoncus.</p>
-</div>
+    <button class="col-3 tutorial-prompt btn btn-outline-secondary" data-segment="hint">Hints</button>
 
 
+    <button class="col-3 tutorial-prompt btn btn-outline-secondary" data-segment="solutionkey">Solution key</button>
+
+
+    <button class="col-3 tutorial-prompt btn btn-outline-secondary" data-segment="reset">Reset proof</button>
+    
+    </div>
+
+    <div class="guide__box guide-text" id="guide-modal">
+        <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
+        <h2>Law sheet</h2>
+        <p>Aliquam vel nisl sed leo cursus iaculis efficitur sed lectus. In vel felis vitae nisi feugiat euismod ut vel enim. Suspendisse accumsan a neque nec pharetra. Suspendisse massa est, rhoncus.</p>
+        <h2>Logic symbols</h2>
+        <p>Aliquam vel nisl sed leo cursus iaculis efficitur sed lectus. In vel felis vitae nisi feugiat euismod ut vel enim. Suspendisse accumsan a neque nec pharetra. Suspendisse massa est, rhoncus.</p>
+    </div>
 
 
 
 
-        <section class="container content-body exercise-space border-top tutorial-section" id="maincontent">
-
-        <p class="question fs-2" id="helper-question">Prove that  <span class="question-statement">(p∨q)→r</span> is logically equivalent to <span class="question-statement">(p→r)∧(q→r)</span>.</p>
-
-<div class="guide__box guide-text" id="guide-question">
-    <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
-    <h2>Logic proof question</h2>
-    <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
-</div>
-
-        <div class="exercise-solution">
-            <div class="solution-step">
-                <p class="solution-step__prompt">To begin this proof,</p>
-                <form>
-                    <div class="solution-step__form row">
-                        <div class="col-12 col-md-9 m-0 p-1 row" id="helper-solution">
-                            <div class="col-12 col-md-5 mb-4 mb-md-0">
-                            <label for="inputLaw" class="form-label">If I apply this law...</label>
-                            <select id="inputLaw" class="form-select">
-                                <option selected>Choose one</option>
-                                <option>...</option>
-                                <option>...</option>
-                            </select>
-                        </div>
-                            <div class="col-12 col-md-7 mb-4 mb-md-0">
-                            <label for="inputStatement" class="form-label">then I'll get this statement...</label>
-                            <input type="text" class="form-control" id="inputStatement" placeholder="Logic statement">
-                        </div>
-                        </div>
-                        <div class="col-12 col-md-3 align-self-end text-center text-md-left p-1" id="helper-submission">
-                            <button type="button" class="btn ll-button btn-danger me-2">
-                                <span class="ll-button__text">Delete</span>
-                            </button>
-                            <button type="button" class="btn ll-button btn-success me-2">
-                                <span class="ll-button__text">Go!</span>
-                            </button>
-                        </div>
-                    </div>
-                </form>
- <div class="guide__box guide-text" id="guide-solution">
-    <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
-    <h2>Solution step</h2>
-    <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
-</div>
- <div class="guide__box guide-text" id="guide-submission">
-    <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
-    <h2>Go, or Delete step</h2>
-    <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
-</div>
-           </div>
 
 
-            <div class="solution-actions" id="testing123">
-            <button type="button" class="btn btn-lg ll-button mx-3 my-2 my-md-0" id="helper-hint">
-                <span class="ll-button__text">I need a hint</span>
+            <section class="container border-top tutorial-section" id="maincontent">
+            <button class="tutorial1-prompt align-self-center mt-3" data-segment="question">
+                <div class="tutorial1-prompt__text">2</div>
             </button>
-            <button type="button" class="btn btn-lg ll-button mx-3 my-2 my-md-0" id="helper-solutionkey">
-                <span class="ll-button__text">Show solution</span>
-            </button>
-            <button type="button" class="btn btn-lg ll-button mx-3 my-2 my-md-0" id="helper-reset">
-                <span class="ll-button__text">Reset proof</span>
-            </button>
+            <p class="question fs-2 mt-0" id="helper-question">Prove that  <span class="question-statement">(p∨q)→r</span> is logically equivalent to <span class="question-statement">(p→r)∧(q→r)</span>.</p>
+
+    <div class="guide__box guide-text" id="guide-question">
+        <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
+        <h2>Logic proof question</h2>
+        <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
+    </div>
+
+            <div class="exercise-solution">
+                <div class="solution-step">
+                    <p class="solution-step__prompt">To begin this proof,
+                    <button class="tutorial1-prompt align-self-center mt-0" data-segment="solution">
+                        <div class="tutorial1-prompt__text">3</div>
+                    </button>
+                    </p>
+                    <form>
+                        <div class="solution-step__form row">
+                            <div class="col-12 col-md-9 m-0 p-1 row" id="helper-solution">
+                                <div class="col-12 col-md-5 mb-4 mb-md-0">
+                                <label for="inputLaw" class="form-label">If I apply this law...</label>
+                                <select id="inputLaw" class="form-select">
+                                    <option selected>Choose one</option>
+                                    <option>...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                                <div class="col-12 col-md-7 mb-4 mb-md-0">
+                                <label for="inputStatement" class="form-label">then I'll get this statement...</label>
+                                <input type="text" class="form-control" id="inputStatement" placeholder="Logic statement">
+                            </div>
+                            </div>
+                            <div class="col-12 col-md-3 align-self-end text-center text-md-left p-1" id="helper-submission">
+                                <button type="button" class="btn ll-button btn-danger me-2">
+                                    <span class="ll-button__text">Delete</span>
+                                </button>
+                                <button type="button" class="btn ll-button btn-success me-2">
+                                    <span class="ll-button__text">Go!</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+     <div class="guide__box guide-text" id="guide-solution">
+        <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
+        <h2>Solution step</h2>
+        <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
+    </div>
+     <div class="guide__box guide-text" id="guide-submission">
+        <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
+        <h2>Go, or Delete step</h2>
+        <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
+    </div>
+               </div>
+
+
+                <div class="solution-actions" id="testing123">
+                <button type="button" class="btn btn-lg ll-button mx-3 my-2 my-md-0" id="helper-hint">
+                    <span class="ll-button__text">I need a hint</span>
+                </button>
+                <button type="button" class="btn btn-lg ll-button mx-3 my-2 my-md-0" id="helper-solutionkey">
+                    <span class="ll-button__text">Show solution</span>
+                </button>
+                <button type="button" class="btn btn-lg ll-button mx-3 my-2 my-md-0" id="helper-reset">
+                    <span class="ll-button__text">Reset proof</span>
+                </button>
+
+                </div>
+     <div class="guide__box guide-text" id="guide-hint">
+        <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
+        <h2>Hints</h2>
+        <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
+    </div>
+
+     <div class="guide__box guide-text" id="guide-solutionkey">
+        <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
+        <h2>Solution key</h2>
+        <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
+    </div>
+
+     <div class="guide__box guide-text" id="guide-reset">
+        <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
+        <h2>Reset proof</h2>
+        <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
+    </div>
 
             </div>
- <div class="guide__box guide-text" id="guide-hint">
-    <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
-    <h2>Hints</h2>
-    <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
-</div>
-
- <div class="guide__box guide-text" id="guide-solutionkey">
-    <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
-    <h2>Solution key</h2>
-    <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
-</div>
-
- <div class="guide__box guide-text" id="guide-reset">
-    <button class="tutorial-close btn btn-warning" aria-label="Close"></button>
-    <h2>Reset proof</h2>
-    <p>Mauris eleifend felis non semper blandit. Aliquam luctus sed neque sagittis eleifend. Morbi ultrices, metus et euismod malesuada, mi sem auctor felis, quis rutrum nulla eros et augue. Integer facilisis.</p>
-</div>
-
-        </div>
 
 
 
@@ -224,157 +234,157 @@
 
 
 
-<!-- Modal -->
-<div class="modal fade" id="lawSheetModal" tabindex="-1" aria-labelledby="lawSheetModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-dialog-variable">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="lawSheetModalLabel">Laws of Propositional Logic</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-            <section class="col-12 col-md-6 law-definition">
-            <h5>De Morgan’s laws:</h5>
-            ¬( p ∧ q ) ≡ ¬p ∨ ¬q<br />
-            ¬( p ∨ q ) ≡ ¬p ∧ ¬q
-            </section>
+        <button type="button" class="cat-button btn btn-light ll-button"
+                         data-bs-toggle="modal" data-bs-target="#catModal">
+        <span class='ll-icons ll-button__icon'><img src="cat.svg" /></span>
+        <span class="ll-button__text d-inline-block d-sm-none">XS, kitten cat, <576px </span>
+        <span class="ll-button__text d-none d-sm-inline-block d-md-none">SM, small cat, ≥576px </span>
+        <span class="ll-button__text d-none d-md-inline-block d-lg-none">MD, medium cat, ≥768px </span>
+        <span class="ll-button__text d-none d-lg-inline-block d-xl-none">LG, chonky cat, ≥992px </span>
+        <span class="ll-button__text d-none d-xl-inline-block d-xxl-none">XL, hefty chonky cat, ≥1200px </span>
+        <span class="ll-button__text d-none d-xxl-inline-block">XXL, mega chonker cat, ≥1400px </span>
+        </button>
 
-            <section class="col-12 col-md-6 law-definition">
-            <h5>Idempotent laws:</h5>
-            p ∨ p ≡ p<br />
-            p ∧ p ≡ p
-            </section>
-
-            <section class="col-12 col-md-6 law-definition">
-            <h5>Associativity laws:</h5>
-            ( p ∧ q ) ∧ r ≡ p ∧ ( q ∧ r )<br />
-            ( p ∨ q ) ∨ r ≡ p ∨ ( q ∨ r )
-            </section>
-
-            <section class="col-12 col-md-6 law-definition">
-            <h5>Commutativity laws:</h5>
-            p ∧ q ≡ q ∧ p<br />
-            p ∨ q ≡ q ∨ p
-            </section>
-
-            <section class="col-12 col-md-6 law-definition">
-            <h5>Distributive laws:</h5>
-            p ∧ ( q ∨ r ) ≡ ( p ∧ q ) ∨ ( p ∧ r )<br />
-            p ∨ ( q ∧ r ) ≡ ( p ∨ q ) ∧ ( p ∨ r )<br />
-            p ∨ ( q ∨ r ) ≡ ( p ∨ q ) ∨ ( p ∨ r )<br />
-            p ∧ ( q ∧ r ) ≡ ( p ∧ q ) ∧ ( p ∧ r )
-            </section>
-
-            <section class="col-12 col-md-6 law-definition">
-            <h5>Identity laws:</h5>
-            p ∧ T ≡ p<br />
-            p ∨ F ≡ p
-            </section>
-
-            <section class="col-12 col-md-6 law-definition">
-            <h5>Domination laws:</h5>
-            p ∨ T ≡ T<br />
-            p ∧ F ≡ F
-            </section>
-
-            <section class="col-12 col-md-6 law-definition">
-            <h5>Double negation law:</h5>
-            ¬¬p ≡ p
-            </section>
-
-            <section class="col-12 col-md-6 law-definition">
-            <h5>Absorption laws:</h5>
-            p ∨ (p ∧ q) ≡ p<br />
-            p ∧ (p ∨ q) ≡ p
-            </section>
-
-            <section class="col-12 col-md-6 law-definition">
-            <h5>Implication to disjunction law:</h5>
-            p → q ≡ ¬p ∨ q
-            </section>
-
-            <section class="col-12 col-md-6 law-definition">
-            <h5>IFF to implication law:</h5>
-            p ↔ q ≡ ( p → q ) ∧ ( q → p )
-            </section>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="keyBindingModal" tabindex="-1" aria-labelledby="keyBindingModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="keyBindingModalLabel">How to type logic symbols</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Key binding instructions
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Cat Modal -->
-<div class="modal fade" id="catModal" tabindex="-1" aria-labelledby="catModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content" style="height:500px;">
-      <div class="modal-header">
-        <h5 class="modal-title" id="catModalLabel">Cat</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-<div style="position: relative; border-bottom: 1rem solid #ccc; height: 250px; width: 300px; overflow: hidden">
-<div class="home">
-<img src="home-icon.svg" />
-</div>
-<div class="flame1">
-<img class="rotating" src="flames.png" />
-</div>
-<div class="flame2">
-<img class="rotating2" src="flames.png" />
-</div>
-<div class="flame3">
-<img class="rotating3" src="flames.png" />
-</div>
-        <div class="cat"><img src="cat.svg" /></div>
-</div>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-    <button type="button" class="cat-button btn btn-light ll-button"
-                     data-bs-toggle="modal" data-bs-target="#catModal">
-    <span class='ll-icons ll-button__icon'><img src="cat.svg" /></span>
-    <span class="ll-button__text d-inline-block d-sm-none">XS, kitten cat, <576px </span>
-    <span class="ll-button__text d-none d-sm-inline-block d-md-none">SM, small cat, ≥576px </span>
-    <span class="ll-button__text d-none d-md-inline-block d-lg-none">MD, medium cat, ≥768px </span>
-    <span class="ll-button__text d-none d-lg-inline-block d-xl-none">LG, chonky cat, ≥992px </span>
-    <span class="ll-button__text d-none d-xl-inline-block d-xxl-none">XL, hefty chonky cat, ≥1200px </span>
-    <span class="ll-button__text d-none d-xxl-inline-block">XXL, mega chonker cat, ≥1400px </span>
-    </button>
-
+        </section>
     </section>
-</section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="lawSheetModal" tabindex="-1" aria-labelledby="lawSheetModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-variable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="lawSheetModalLabel">Laws of Propositional Logic</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+                <section class="col-12 col-md-6 law-definition">
+                <h5>De Morgan’s laws:</h5>
+                ¬( p ∧ q ) ≡ ¬p ∨ ¬q<br />
+                ¬( p ∨ q ) ≡ ¬p ∧ ¬q
+                </section>
+
+                <section class="col-12 col-md-6 law-definition">
+                <h5>Idempotent laws:</h5>
+                p ∨ p ≡ p<br />
+                p ∧ p ≡ p
+                </section>
+
+                <section class="col-12 col-md-6 law-definition">
+                <h5>Associativity laws:</h5>
+                ( p ∧ q ) ∧ r ≡ p ∧ ( q ∧ r )<br />
+                ( p ∨ q ) ∨ r ≡ p ∨ ( q ∨ r )
+                </section>
+
+                <section class="col-12 col-md-6 law-definition">
+                <h5>Commutativity laws:</h5>
+                p ∧ q ≡ q ∧ p<br />
+                p ∨ q ≡ q ∨ p
+                </section>
+
+                <section class="col-12 col-md-6 law-definition">
+                <h5>Distributive laws:</h5>
+                p ∧ ( q ∨ r ) ≡ ( p ∧ q ) ∨ ( p ∧ r )<br />
+                p ∨ ( q ∧ r ) ≡ ( p ∨ q ) ∧ ( p ∨ r )<br />
+                p ∨ ( q ∨ r ) ≡ ( p ∨ q ) ∨ ( p ∨ r )<br />
+                p ∧ ( q ∧ r ) ≡ ( p ∧ q ) ∧ ( p ∧ r )
+                </section>
+
+                <section class="col-12 col-md-6 law-definition">
+                <h5>Identity laws:</h5>
+                p ∧ T ≡ p<br />
+                p ∨ F ≡ p
+                </section>
+
+                <section class="col-12 col-md-6 law-definition">
+                <h5>Domination laws:</h5>
+                p ∨ T ≡ T<br />
+                p ∧ F ≡ F
+                </section>
+
+                <section class="col-12 col-md-6 law-definition">
+                <h5>Double negation law:</h5>
+                ¬¬p ≡ p
+                </section>
+
+                <section class="col-12 col-md-6 law-definition">
+                <h5>Absorption laws:</h5>
+                p ∨ (p ∧ q) ≡ p<br />
+                p ∧ (p ∨ q) ≡ p
+                </section>
+
+                <section class="col-12 col-md-6 law-definition">
+                <h5>Implication to disjunction law:</h5>
+                p → q ≡ ¬p ∨ q
+                </section>
+
+                <section class="col-12 col-md-6 law-definition">
+                <h5>IFF to implication law:</h5>
+                p ↔ q ≡ ( p → q ) ∧ ( q → p )
+                </section>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="keyBindingModal" tabindex="-1" aria-labelledby="keyBindingModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="keyBindingModalLabel">How to type logic symbols</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Key binding instructions
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cat Modal -->
+    <div class="modal fade" id="catModal" tabindex="-1" aria-labelledby="catModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="height:500px;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="catModalLabel">Cat</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+    <div style="position: relative; border-bottom: 1rem solid #ccc; height: 250px; width: 300px; overflow: hidden">
+    <div class="home">
+    <img src="home-icon.svg" />
+    </div>
+    <div class="flame1">
+    <img class="rotating" src="flames.png" />
+    </div>
+    <div class="flame2">
+    <img class="rotating2" src="flames.png" />
+    </div>
+    <div class="flame3">
+    <img class="rotating3" src="flames.png" />
+    </div>
+            <div class="cat"><img src="cat.svg" /></div>
+    </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-</div>
+
+    </div>
 </main>
 
 <footer>
@@ -398,7 +408,7 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-    $('.tutorial-prompt').click(function() {
+    $('.tutorial1-prompt').click(function() {
        var segment = $(this).data('segment');
        var segmentClass = "tutorial-" + segment;
        var segmentGuide = "#guide-" + segment;

@@ -2,6 +2,28 @@
     position: relative;
 }
 
+.tutorial-prompt {
+    margin: 0.5rem;
+}
+
+.tutorial1-prompt {
+    height: 4rem;
+    width: 4rem;
+    background-color: rgba(239, 112, 37, 1);
+    border-radius: 50%;
+    border: 0.25rem solid #ffcc66;
+    position: relative;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.tutorial1-prompt__text {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
 .guide__box {
 	position: relative;
 	/*right: 1rem;
