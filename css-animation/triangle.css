@@ -1,0 +1,217 @@
+
+.bat {
+    width: 3rem;
+    height: 20rem;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    background-color: gray;
+    animation: 2.5s linear 1.5s 6 alternate slidein-bat;
+}
+
+.box-bound {
+    position: absolute;
+    width: 12rem;
+    height: 12rem;
+    top: 3rem;
+    left: 3rem;
+    border-radius: 50%;
+    animation: 2.5s linear 1.5s 6 alternate slidein;
+    padding: 2rem;
+    background-color: #FFE0B2;
+}
+
+.box-pow {
+    position: absolute;
+    top: 3rem;
+    left: 6rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: #BF360C;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+    line-height: 4rem;
+    text-align: right;
+    visibility: hidden;
+    animation: 2.5s linear 1.5s 6 alternate slidein-pow;
+}
+
+.box-blue, .box-orange, .box-green, .box-gray {
+    width: 8rem;
+    height: 8rem;
+}
+
+.box-blue {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    animation: 2.5s linear 1.5s 6 alternate slidein-blue;
+    }
+
+.box-orange {
+    position: absolute;
+    top: 2;
+    left: 6rem;
+    animation: 2.5s linear 1.5s 6 alternate slidein-orange;
+    }
+
+.box-green {
+    position: absolute;
+    top: 6rem;
+    left: 2rem;
+    animation: 2.5s linear 1.5s 6 alternate slidein-green;
+    }
+
+.box-gray {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    animation: 2.5s linear 1.5s 6 alternate slidein-gray;
+    }
+
+
+.triangle-blue {
+    width: 0rem;
+    height: 0rem;
+    border-top: 4rem solid #1565C0; /* blue */
+    border-right: 4rem solid transparent; /* orange */
+    border-bottom: 0; /* green */
+    border-left: 4rem solid transparent; /* gray */
+}
+
+.triangle-orange {
+    width: 0rem;
+    height: 0rem;
+    border-top: 4rem solid transparent; /* blue */
+    border-right: 4rem solid #FF8F00; /* orange */
+    border-bottom: 4rem solid transparent; /* green */
+    border-left: none; /* gray */
+}
+
+.triangle-green {
+    width: 0;
+    height: 0;
+    border-top: 0;
+    border-right: 4rem solid transparent;
+    border-bottom: 4rem solid #2E7D32; /* green */
+    border-left: 4rem solid transparent;
+}
+
+.triangle-gray {
+    width: 0rem;
+    height: 0rem;
+    border-top: 4rem solid transparent; /* blue */
+    border-right: 0; /* orange */
+    border-bottom: 4rem solid transparent; /* green */
+    border-left: 4rem solid #333333; /* gray */
+}
+
+.triangle-base {
+    width: 0rem;
+    height: 0rem;
+    border-top: 4rem solid #1565C0; /* blue */
+    border-right: 4rem solid #FF8F00; /* orange */
+    border-bottom: 4rem solid #2E7D32; /* green */
+    border-left: 4rem solid #333333; /* gray */
+}
+
+#example-element {
+    background-color: #1766aa;
+    margin: 20px;
+    border: 5px solid #333;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+@keyframes slidein-blue {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+ }
+
+  50% {
+    transform: translate(-200%, 0%) rotate(-180deg) scale(2);
+  }
+
+  100% {
+    transform: translate(-200%, -200%) rotate(-180deg) scale(0.5);
+  }
+}
+
+@keyframes slidein-orange {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+ }
+
+  50% {
+    transform: translate(200%, 0%) rotate(180deg) scale(2);
+  }
+
+  100% {
+    transform: translate(200%, -200%) rotate(180deg) scale(0.5);
+  }
+}
+
+@keyframes slidein-green {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+ }
+
+  50% {
+    transform: translate(200%, 200%) rotate(180deg) scale(2);
+  }
+
+  100% {
+    transform: translate(0%, 200%) rotate(180deg) scale(0.5);
+  }
+
+}
+
+@keyframes slidein-gray {
+  0% {
+    transform: translate(0%, 0%) rotate(0deg);
+ }
+
+  50% {
+    transform: translate(-200%, 200%) rotate(-180deg) scale(2);
+  }
+
+  100% {
+    transform: translate(-200%, 200%) rotate(-180deg) scale(0.5);
+  }
+}
+
+
+@keyframes slidein {
+  0% {
+    transform: translate(0%, 0%);
+ }
+
+  100% {
+    transform: translate(350%, 100%);
+  }
+}
+
+@keyframes slidein-bat {
+  0% {
+    transform: translate(0%, 0%);
+ }
+
+  100% {
+    transform: translate(-950%, 50%);
+  }
+}
+
+@keyframes slidein-pow {
+  98% {
+    visibility:hidden;
+ }
+
+  100% {
+    visibility:visible;
+  }
+}

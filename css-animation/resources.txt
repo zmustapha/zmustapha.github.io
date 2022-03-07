@@ -1,0 +1,12 @@
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations
+
+https://cssanimation.rocks/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions
+https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function
+
+https://blog.hubspot.com/website/css-animation
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties
