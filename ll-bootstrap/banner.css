@@ -50,19 +50,19 @@
 
 
 .banner-hero {
-    height: 12rem;
+    height: 10rem;
     position: relative;
     color: #fff;
 }
 .banner-hero__container {
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 .banner-hero__title {
-    font-size: 2.5rem;
+    font-size: 2.125rem;
     font-weight: 700;
 }
 .banner-hero__text {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 .banner-hero__avatar {
