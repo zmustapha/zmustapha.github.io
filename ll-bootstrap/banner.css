@@ -4,6 +4,10 @@
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: #efefef;
+  background: url(c-poly-test2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }
 .main-banner__title {
     display: block;
@@ -48,16 +52,18 @@
 .banner-hero {
     height: 12rem;
     position: relative;
-    color: #333;
+    color: #fff;
 }
 .banner-hero__container {
     margin-top: 2rem;
 }
 .banner-hero__title {
     font-size: 2.5rem;
+    font-weight: 700;
 }
 .banner-hero__text {
     font-size: 1.25rem;
+    font-weight: 600;
 }
 .banner-hero__avatar {
     width: 6rem;
@@ -108,10 +114,10 @@
 }
 @media (min-width: 1200px) {
     .banner-hero {
-        height: 20rem;
+        height: 24rem;
     }
     .banner-hero__container {
-        margin-top: 4rem;
+        margin-top: 6rem;
     }
     .banner-hero__title {
         font-size: 5rem;
