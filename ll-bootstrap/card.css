@@ -89,6 +89,7 @@
     border: 1px solid #999;
     background-color: #eeeeee;
     align-self: center;
+    overflow: visible;
 }
 @media (min-width: 768px) {
     .cardset-card__avatar {
