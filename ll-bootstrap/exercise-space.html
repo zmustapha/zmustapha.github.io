@@ -35,20 +35,20 @@
     <div class="navbar top-bar">
         <div class="container top-bar__container">
             <a href="levels-dashboard.html" class="navbar-brand d-flex align-items-center">
-            <img class="gn-i me-3 temp-icon" src="temp-icon-sonobe.svg">
+            <img class="gn-i me-3 temp-icon" src="logo-logiclearner-bw.svg">
             <span>Logic Learner</span>
             </a>
 
             <ul class="nav col-auto top-bar__nav">
                 <li>
-                  <a href="levels-dashboard.html" class="nav-link">
-                    <img class="gn-i d-block mx-auto mb-1 temp-icon" src="temp-icon-home.svg">
-                    Home
+                  <a href="tutorial.html" class="nav-link">
+                    <img class="gn-i d-block mx-auto mb-1 temp-icon" src="icon-tutorial.svg">
+                    Tutorial
                   </a>
                 </li>
                 <li>
                   <a href="levels-dashboard.html" class="nav-link">
-                    <img class="gn-i d-block mx-auto mb-1 temp-icon" src="temp-icon-grid.svg">
+                    <img class="gn-i d-block mx-auto mb-1 temp-icon" src="icon-grid.svg">
                     Levels
                   </a>
                 </li>
@@ -65,7 +65,7 @@
         <div class="container d-flex justify-content-start">
             <div class="main-banner__prompt"><a href="questions-dashboard.html">&lsaquo;</a></div>
             <figure class="main-banner__avatar align-self-center" aria-hidden="true">
-                <img src="sonobe-i.svg">
+                <img src="avatar-level-3.svg">
             </figure>
             <h1 class="align-self-center"><a href="questions-dashboard.html">
                 <span class="main-banner__subhead">LEVEL 1:</span>
@@ -284,14 +284,49 @@
 
 <!-- Modal -->
 <div class="modal fade" id="keyBindingModal" tabindex="-1" aria-labelledby="keyBindingModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+  <div class="modal-dialog modal-dialog-scrollable modal-dialog-variable">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="keyBindingModalLabel">How to type logic symbols</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Key binding instructions
+            <table class="table">
+            <thead>
+            <tr>
+            <th scope="col" class="text-nowrap pe-3">Key binding</th>
+            <th scope="col" class="text-nowrap pe-3">How to type</th>
+            <th scope="col" class="text-nowrap pe-3">Logic symbol</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>^</td>
+            <td>The caret symbol, <b>^</b></td>
+            <td><b>∧</b> (and)</td>
+            </tr>
+            <tr>
+            <td>v</td>
+            <td>Lowercase <b>v</b>, as in victory</td>
+            <td><b>∨</b> (or)</td>
+            </tr>
+            <tr>
+            <td>~</td>
+            <td>Tilde symbol, <b>~</b></td>
+            <td><b>¬</b> (negation; not)</td>
+            </tr>
+            <tr>
+            <td>-></td>
+            <td>Hyphen and greater than symbols, <span class="text-nowrap"><b>-></b></span></td>
+            <td><b>→</b> (implies; if &hellip; then)</td>
+            </tr>
+            <tr>
+            <td><-></td>
+            <td>less than, hyphen, and greater than symbols, <span class="text-nowrap"><b><-></b></span></td>
+            <td><b>↔</b> (if and only if; iff; means the same as)</td>
+            </tr>
+            </tbody>
+            </table>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -361,8 +396,18 @@
             <a href="/contact/" title="Contact us">Contact Us</a>
         </li>
     </ul>
-    <p class="ll-license text-center mt-3 fs-6">Logic Learner open-source code is on <a itemprop="license" rel="license noopener noreferrer" href="https://github.com/ccnmtl/logiclearner">Github</a> with <a itemprop="license" rel="license noopener noreferrer" href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPLv3</a> license.</p>
-    <div itemscope itemtype="http://schema.org/EducationalOrganization" class='text-center'><a href="http://ctl.columbia.edu" rel="noopener noreferrer" target="_blank" itemprop="url" class='d-inline-block'><img src="logo-ctl.svg" class="footer__logo img-fluid" alt="" itemprop="logo" /><span class="visually-hidden" itemprop="name">Center for Teaching and Learning at Columbia University</span></a></div>
+    <p class="ll-license text-center mt-3 fs-6">Logic Learner open-source code is on <a itemprop="license" rel="license noopener noreferrer" href="https://github.com/ccnmtl/logiclearner">Github</a> <span class="text-nowrap">with <a itemprop="license" rel="license noopener noreferrer" href="https://www.gnu.org/licenses/gpl-3.0.en.html">GNU GPLv3</a> license.</span></p>
+    <div class="row my-5">
+        <div itemscope itemtype="http://schema.org/EducationalOrganization" class='col-12 col-md-6 text-center text-md-end pe-md-5 py-3'>
+            <a href="https://ctl.columbia.edu" rel="noopener noreferrer" target="_blank" itemprop="url"><img src="logo-ctl.svg" class="footer__logo img-fluid" alt="" itemprop="logo" /><span class="visually-hidden" itemprop="name">Center for Teaching and Learning at Columbia University</span></a>
+        </div>
+        <div itemscope itemtype="http://schema.org/EducationalOrganization" class='col-12 col-md-6 text-center text-md-start ps-md-5 py-3'>
+            <a href="https://cs.columbia.edu" rel="noopener noreferrer" target="_blank" itemprop="url"><img src="logo-cs.svg" class="footer__logo img-fluid" alt="" itemprop="logo" /><span class="visually-hidden" itemprop="name">Computer Science Department at Columbia University</span></a>
+        </div>
+        <div itemscope itemtype="http://schema.org/EducationalOrganization" class='col-12 text-center py-3 py-md-5'>
+            <a href="https://www.engineering.columbia.edu/" rel="noopener noreferrer" target="_blank" itemprop="url"><img src="logo-cuseas.svg" class="footer__logo img-fluid" alt="" itemprop="logo" /><span class="visually-hidden" itemprop="name"> The Fu Foundation School of Engineering and Applied Science at Columbia University</span></a>
+        </div>
+    </div>
 
     </div>
 </footer>
